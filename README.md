@@ -11,12 +11,13 @@ A small php mvc website
 - Create table:
 >`
 CREATE TABLE `works` (
-  `id` int(11) NOT NULL,
-  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `starting_date` date DEFAULT NULL,
-  `ending_date` date DEFAULT NULL,
-  `status` tinyint(1) NOT NULL DEFAULT 0
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+ `starting_date` date DEFAULT NULL,
+ `ending_date` date DEFAULT NULL,
+ `status` tinyint(1) NOT NULL DEFAULT 0,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci
 `
 - Change your DB infomation at `cores/DB`
 
