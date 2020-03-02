@@ -8,7 +8,7 @@ A small php mvc website
 ## 2 Connect to Database: 
 
 - Create BD 'todo'
-- Create table:
+- Create table or import from `todo.sql`
 >`
 CREATE TABLE `works` (
  `id` int(11) NOT NULL AUTO_INCREMENT,
